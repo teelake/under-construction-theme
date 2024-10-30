@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Under Construction</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #007bff, #6c757d);
+      color: #fff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .construction-icon {
+      width: 100px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s;
+    }
+    p {
+      font-size: 1.2rem;
+      animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .footer a {
+        text-decoration: none;
+        color: #f8f9fa;
+    }
+    .footer-icon {
+      color: #e63946;
+      animation: heartbeat 1.5s infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- SVG icon -->
+    <svg class="construction-icon mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2a10 10 0 00-3.9 19.26l1.26-1.26a8.03 8.03 0 011.14-.09c4.41 0 8 3.59 8 8h2c0-5.52-4.48-10-10-10s-10 4.48-10 10h2c0-4.41 3.59-8 8-8 .76 0 1.51.1 2.23.28L15.9 19.5c-.1.01-.2.01-.31.01A10 10 0 0012 2z"/>
+    </svg>
+
+    <!-- Title and description -->
+    <h1>We’re Building Something Amazing!</h1>
+    <p>Our website is currently under construction. We’ll be here soon with a brand new site. Stay tuned!</p>
+
+    <!-- Animated Spinner icon -->
+    <div class="spinner-border text-light mt-4" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <span>Made with</span>
+    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+    <span>by <a href="https://github.com/teelake/" target="_blank">Téelake</a></span>
+  </footer>
+
+  <!-- Bootstrap JS (optional if you need Bootstrap components to work) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
